@@ -1,0 +1,28 @@
+build:
+  trigger: 
+    type: PR
+    name: master
+  workflow-template: "build-and-test-go"
+
+
+envs:
+- develop:
+  trigger:
+    type: merge
+    name: master
+  service:
+    accessibility: private
+    port: 8080
+    observability:
+      conifig:
+      SLIs: []
+  resources:
+  - name: "mongo-classic"
+    size: 4Gi
+- production:
+  trigger:
+    type: deployment
+    name: develop
+  service:
+    accessibility: public
+    port: 8080
