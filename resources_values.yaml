@@ -1,4 +1,0 @@
-global:
-  namespaceOverride: develop
-persistence:
-  size: 4Gi
