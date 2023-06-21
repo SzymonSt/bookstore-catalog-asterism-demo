@@ -19,7 +19,7 @@ func main() {
 
 	server.Use(cors.New(corsConfig))
 
-	router := server.Group("/bookstore-catalog/api")
+	router := server.Group("/bookstore-catalog-asterism-demo/api")
 	router.GET("/healthz", func(ctx *gin.Context) {
 		message := "bookstore-catalogv4 api is up and running"
 		ctx.JSON(http.StatusOK, gin.H{"status": "success", "message": message})
