@@ -2,7 +2,7 @@ build:
   trigger: 
     type: PR
     name: master
-  workflow-template: "build-and-test-go"
+  workflowTemplate: "build-and-test-go"
 
 
 envs:
