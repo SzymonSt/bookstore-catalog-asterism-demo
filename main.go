@@ -21,7 +21,7 @@ func main() {
 
 	router := server.Group("/bookstore-catalog-asterism-demo/api")
 	router.GET("/healthz", func(ctx *gin.Context) {
-		message := "bookstore-catalogv8 api is up and running"
+		message := "bookstore-catalogv9 api is up and running"
 		ctx.JSON(http.StatusOK, gin.H{"status": "success", "message": message})
 	})
 
