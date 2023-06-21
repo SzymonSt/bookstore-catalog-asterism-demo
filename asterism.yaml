@@ -15,7 +15,7 @@ envs:
     port: 8080
     observability:
       conifig:
-      SLIs: ["error_count"]
+      slis: ["error_count"]
   resources:
   - name: "mongo-classic"
     parameters:
